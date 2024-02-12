@@ -19,6 +19,7 @@ class MoviesController < ApplicationController
     @new_movie.year = params["query_year"]
     @new_movie.duration = params["query_duration"]
     @new_movie.description = params["query_description"]
+    @new_movie.director_id = params["query_director_id"]
     @new_movie.image = params["query_image"]
 
 
@@ -39,6 +40,7 @@ class MoviesController < ApplicationController
     @movie.year = params["query_year"]
     @movie.duration = params["query_duration"]
     @movie.description = params["query_description"]
+    @movie.director_id = params["query_director_id"]
     @movie.image = params["query_image"]
 
     @movie.save
