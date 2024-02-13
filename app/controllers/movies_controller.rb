@@ -44,7 +44,7 @@ class MoviesController < ApplicationController
     @movie.image = params["query_image"]
 
     @movie.save
-    redirect_to("/movie/#{the_id}", { :notice => "Movie updated successfully."} )
+    redirect_to("/movies/#{the_id}", { :notice => "Movie updated successfully."} )
 
   end # Of method.
 
